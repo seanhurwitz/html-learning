@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY FORM</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      a {
+        text-decoration: none;
+      }
+      body {
+        background: #3c4f85;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        color: #333;
+        line-height: 1.4em;
+      }
+      .container {
+        background: rgb(255, 255, 255);
+        border: 1px solid lightgray;
+        max-width: 400px;
+        margin: 30px auto 15px auto;
+        height: 650px;
+        border-radius: 5px 5px 0 0;
+        box-shadow: 0px 5px 1px #222c47;
+        text-align: center;
+        padding: 10px 25px;
+      }
+      .container input {
+        display: block;
+        width: 100%;
+        margin: 10px 0 20px 0;
+        height: 30px;
+      }
+
+      .container form {
+        text-align: left;
+        font-size: 14px;
+      }
+
+      .container p {
+        font-size: 12px;
+      }
+
+      .sign-in {
+        text-align: center;
+        color: white;
+      }
+
+      .sign-in a {
+        color: rgb(65, 200, 133);
+      }
+
+      .btn {
+        display: block;
+        width: 100%;
+        height: 30px;
+        background: rgb(65, 200, 133);
+        color: white;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 2px;
+      }
+      .btn:hover {
+        background: rgb(42, 148, 95);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sign Up</h1>
+      <h4>It's free, and only takes a minute</h4>
+      <form action="#">
+        <label for="first-name">First Name</label>
+        <input type="text" name="first-name" placeholder="Sean" />
+        <label for="last-name">Last Name</label>
+        <input type="text" name="last-name" placeholder="Hurwitz" />
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="seanhurwitz@example.com"
+        />
+        <label for="password">Password</label>
+        <input type="password" name="password" />
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" name="confirm-password" />
+        <button class="btn">Sign Up</button>
+      </form>
+      <p>
+        By clicking the Sign Up button, you agree to our <br />
+        <a href="#"> Terms & Conditions and Privacy Policy</a>
+      </p>
+    </div>
+    <div class="sign-in">
+      Already have an account? <a href="#">Login Here!</a>
+    </div>
+  </body>
+</html>
